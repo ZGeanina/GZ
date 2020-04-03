@@ -1,0 +1,39 @@
+
+import java.util.ArrayList;
+
+
+public class AllMethods {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hello Word!");
+		
+		ArrayList<String> array= new ArrayList<String>();
+		array.add("C");
+		array.add("C++");
+		array.add("C#");
+		array.add("Python");
+		array.add("Go");
+		array.add("Rust");
+		array.add("JavaScript");
+		array.add("Php");
+		array.add("Swift");
+		array.add("Java");
+		System.out.println(array);
+		
+		int n=(int)(Math.random()*1_000_000);
+		System.out.println("The number is "+n);
+		int m=n*3;
+		System.out.println("Multiplication is "+m);
+		int d=n/7;
+		System.out.println("Division is "+d);
+	
+		int extract=n%100000;
+		int sum=0;
+		while(extract!=0) {
+			sum+=extract%10;
+			extract=extract/10;
+			}
+		System.out.println("The sum of number is "+sum);
+  }
+}
